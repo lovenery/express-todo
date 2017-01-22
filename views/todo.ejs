@@ -14,8 +14,9 @@
       </form>
 
       <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
+        <% for (let i = 0; i < todos.length; i++) { %>
+          <li><%= todos[i].item %></li>
+        <% } %>
       </ul>
     </div>
 
@@ -24,5 +25,6 @@
     src="https://code.jquery.com/jquery-1.12.4.js"
     integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
     crossorigin="anonymous"></script>
+  <script src="/todo-list.js" charset="utf-8"></script>
   </body>
 </html>
